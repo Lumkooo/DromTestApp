@@ -18,6 +18,12 @@
 		CE9940FA25E77604006DB8E9 /* ImagesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9940F925E77604006DB8E9 /* ImagesListPresenter.swift */; };
 		CE9940FD25E77610006DB8E9 /* ImagesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9940FC25E77610006DB8E9 /* ImagesListInteractor.swift */; };
 		CE99410025E77616006DB8E9 /* ImagesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9940FF25E77616006DB8E9 /* ImagesListRouter.swift */; };
+		CE99410325E77928006DB8E9 /* ImagesListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99410225E77928006DB8E9 /* ImagesListCollectionViewCell.swift */; };
+		CE99410C25E77AB9006DB8E9 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99410B25E77AB9006DB8E9 /* ImageLoader.swift */; };
+		CE99410F25E77B7B006DB8E9 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99410E25E77B7B006DB8E9 /* AppConstants.swift */; };
+		CE99411225E77DA5006DB8E9 /* ImagesURLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99411125E77DA5006DB8E9 /* ImagesURLManager.swift */; };
+		CE99411625E78018006DB8E9 /* ImagesCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99411525E78018006DB8E9 /* ImagesCollectionViewDataSource.swift */; };
+		CE99411A25E78026006DB8E9 /* ImagesCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99411925E78026006DB8E9 /* ImagesCollectionViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		CE9940F925E77604006DB8E9 /* ImagesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListPresenter.swift; sourceTree = "<group>"; };
 		CE9940FC25E77610006DB8E9 /* ImagesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListInteractor.swift; sourceTree = "<group>"; };
 		CE9940FF25E77616006DB8E9 /* ImagesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListRouter.swift; sourceTree = "<group>"; };
+		CE99410225E77928006DB8E9 /* ImagesListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE99410B25E77AB9006DB8E9 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		CE99410E25E77B7B006DB8E9 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		CE99411125E77DA5006DB8E9 /* ImagesURLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesURLManager.swift; sourceTree = "<group>"; };
+		CE99411525E78018006DB8E9 /* ImagesCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		CE99411925E78026006DB8E9 /* ImagesCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 			children = (
 				CE9940E625E77432006DB8E9 /* Assembly */,
 				CE9940E125E773EB006DB8E9 /* App */,
+				CE99410A25E77AA4006DB8E9 /* Model */,
 				CE9940E925E77506006DB8E9 /* Modules */,
 				CE9940D425E7725C006DB8E9 /* Assets.xcassets */,
 				CE9940D625E7725C006DB8E9 /* LaunchScreen.storyboard */,
@@ -118,8 +131,29 @@
 			isa = PBXGroup;
 			children = (
 				CE9940F125E775F3006DB8E9 /* ImagesListView.swift */,
+				CE99410225E77928006DB8E9 /* ImagesListCollectionViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CE99410A25E77AA4006DB8E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE99410B25E77AB9006DB8E9 /* ImageLoader.swift */,
+				CE99410E25E77B7B006DB8E9 /* AppConstants.swift */,
+				CE99411125E77DA5006DB8E9 /* ImagesURLManager.swift */,
+				CE99411425E78005006DB8E9 /* ImageCollectionViewModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE99411425E78005006DB8E9 /* ImageCollectionViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE99411525E78018006DB8E9 /* ImagesCollectionViewDataSource.swift */,
+				CE99411925E78026006DB8E9 /* ImagesCollectionViewDelegate.swift */,
+			);
+			path = ImageCollectionViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,11 +227,17 @@
 			files = (
 				CE9940F225E775F3006DB8E9 /* ImagesListView.swift in Sources */,
 				CE99410025E77616006DB8E9 /* ImagesListRouter.swift in Sources */,
+				CE99410325E77928006DB8E9 /* ImagesListCollectionViewCell.swift in Sources */,
 				CE9940EE25E7753C006DB8E9 /* ImagesListVCAssembly.swift in Sources */,
+				CE99411225E77DA5006DB8E9 /* ImagesURLManager.swift in Sources */,
 				CE9940FD25E77610006DB8E9 /* ImagesListInteractor.swift in Sources */,
+				CE99410C25E77AB9006DB8E9 /* ImageLoader.swift in Sources */,
+				CE99411625E78018006DB8E9 /* ImagesCollectionViewDataSource.swift in Sources */,
 				CE9940D025E7725A006DB8E9 /* ImagesListViewController.swift in Sources */,
+				CE99410F25E77B7B006DB8E9 /* AppConstants.swift in Sources */,
 				CE9940E425E7742F006DB8E9 /* NavigationControllerAssembly.swift in Sources */,
 				CE9940CC25E7725A006DB8E9 /* AppDelegate.swift in Sources */,
+				CE99411A25E78026006DB8E9 /* ImagesCollectionViewDelegate.swift in Sources */,
 				CE9940FA25E77604006DB8E9 /* ImagesListPresenter.swift in Sources */,
 				CE9940CE25E7725A006DB8E9 /* SceneDelegate.swift in Sources */,
 			);
@@ -348,7 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lumko.DromTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -367,7 +407,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lumko.DromTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

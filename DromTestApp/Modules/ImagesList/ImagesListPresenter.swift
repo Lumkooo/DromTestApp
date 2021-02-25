@@ -8,7 +8,7 @@
 import Foundation
 
 protocol IImagesListPresenter {
-
+    func viewDidLoad(ui: IImagesListView)
 }
 
 final class ImagesListPresenter {
@@ -30,11 +30,30 @@ final class ImagesListPresenter {
 // MARK: - IImagesListPresenter
 
 extension ImagesListPresenter: IImagesListPresenter {
-
+    func viewDidLoad(ui: IImagesListView) {
+        self.ui = ui
+        self.ui?.cellWasSelectedAt = { [weak self] (indexPath) in
+            self?.interactor.removeAt(indexPath: indexPath)
+        }
+        self.ui?.refreshControlDidChangedValue = { [weak self] in
+            self?.interactor.reloadData()
+        }
+        self.interactor.loadInitData()
+    }
 }
 
 // MARK: - IImagesListInteractorOuter
 
 extension ImagesListPresenter: IImagesListInteractorOuter {
+    func prepareView(stringURLs: [String]) {
+        self.ui?.setupView(stringURLs: stringURLs)
+    }
 
+    func removeAt(indexPath: IndexPath) {
+        self.ui?.removeCellAt(indexPath: indexPath)
+    }
+
+    func reloadView(stringURLs: [String]) {
+        self.ui?.reloadCollectionView(stringURLs: stringURLs)
+    }
 }

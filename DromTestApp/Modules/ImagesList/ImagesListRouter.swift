@@ -8,7 +8,6 @@
 import UIKit
 
 protocol IImagesListRouter {
-
 }
 
 final class ImagesListRouter {

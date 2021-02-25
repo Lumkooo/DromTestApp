@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		CE9940CC25E7725A006DB8E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9940CB25E7725A006DB8E9 /* AppDelegate.swift */; };
 		CE9940CE25E7725A006DB8E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9940CD25E7725A006DB8E9 /* SceneDelegate.swift */; };
-		CE9940D025E7725A006DB8E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9940CF25E7725A006DB8E9 /* ViewController.swift */; };
-		CE9940D325E7725A006DB8E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9940D125E7725A006DB8E9 /* Main.storyboard */; };
+		CE9940D025E7725A006DB8E9 /* ImagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9940CF25E7725A006DB8E9 /* ImagesListViewController.swift */; };
 		CE9940D525E7725C006DB8E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9940D425E7725C006DB8E9 /* Assets.xcassets */; };
 		CE9940D825E7725C006DB8E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9940D625E7725C006DB8E9 /* LaunchScreen.storyboard */; };
+		CE9940E425E7742F006DB8E9 /* NavigationControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9940E325E7742F006DB8E9 /* NavigationControllerAssembly.swift */; };
+		CE9940EE25E7753C006DB8E9 /* ImagesListVCAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9940ED25E7753C006DB8E9 /* ImagesListVCAssembly.swift */; };
+		CE9940F225E775F3006DB8E9 /* ImagesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9940F125E775F3006DB8E9 /* ImagesListView.swift */; };
+		CE9940FA25E77604006DB8E9 /* ImagesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9940F925E77604006DB8E9 /* ImagesListPresenter.swift */; };
+		CE9940FD25E77610006DB8E9 /* ImagesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9940FC25E77610006DB8E9 /* ImagesListInteractor.swift */; };
+		CE99410025E77616006DB8E9 /* ImagesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9940FF25E77616006DB8E9 /* ImagesListRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE9940C825E7725A006DB8E9 /* DromTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DromTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9940CB25E7725A006DB8E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9940CD25E7725A006DB8E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE9940CF25E7725A006DB8E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE9940D225E7725A006DB8E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE9940CF25E7725A006DB8E9 /* ImagesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewController.swift; sourceTree = "<group>"; };
 		CE9940D425E7725C006DB8E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9940D725E7725C006DB8E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE9940D925E7725C006DB8E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9940E325E7742F006DB8E9 /* NavigationControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerAssembly.swift; sourceTree = "<group>"; };
+		CE9940ED25E7753C006DB8E9 /* ImagesListVCAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListVCAssembly.swift; sourceTree = "<group>"; };
+		CE9940F125E775F3006DB8E9 /* ImagesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListView.swift; sourceTree = "<group>"; };
+		CE9940F925E77604006DB8E9 /* ImagesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListPresenter.swift; sourceTree = "<group>"; };
+		CE9940FC25E77610006DB8E9 /* ImagesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListInteractor.swift; sourceTree = "<group>"; };
+		CE9940FF25E77616006DB8E9 /* ImagesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		CE9940CA25E7725A006DB8E9 /* DromTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				CE9940CB25E7725A006DB8E9 /* AppDelegate.swift */,
-				CE9940CD25E7725A006DB8E9 /* SceneDelegate.swift */,
-				CE9940CF25E7725A006DB8E9 /* ViewController.swift */,
-				CE9940D125E7725A006DB8E9 /* Main.storyboard */,
+				CE9940E625E77432006DB8E9 /* Assembly */,
+				CE9940E125E773EB006DB8E9 /* App */,
+				CE9940E925E77506006DB8E9 /* Modules */,
 				CE9940D425E7725C006DB8E9 /* Assets.xcassets */,
 				CE9940D625E7725C006DB8E9 /* LaunchScreen.storyboard */,
 				CE9940D925E7725C006DB8E9 /* Info.plist */,
 			);
 			path = DromTestApp;
+			sourceTree = "<group>";
+		};
+		CE9940E125E773EB006DB8E9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE9940CB25E7725A006DB8E9 /* AppDelegate.swift */,
+				CE9940CD25E7725A006DB8E9 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CE9940E625E77432006DB8E9 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				CE9940E325E7742F006DB8E9 /* NavigationControllerAssembly.swift */,
+				CE9940ED25E7753C006DB8E9 /* ImagesListVCAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		CE9940E825E774F8006DB8E9 /* ImagesList */ = {
+			isa = PBXGroup;
+			children = (
+				CE9940F425E775F6006DB8E9 /* Views */,
+				CE9940CF25E7725A006DB8E9 /* ImagesListViewController.swift */,
+				CE9940F925E77604006DB8E9 /* ImagesListPresenter.swift */,
+				CE9940FC25E77610006DB8E9 /* ImagesListInteractor.swift */,
+				CE9940FF25E77616006DB8E9 /* ImagesListRouter.swift */,
+			);
+			path = ImagesList;
+			sourceTree = "<group>";
+		};
+		CE9940E925E77506006DB8E9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CE9940E825E774F8006DB8E9 /* ImagesList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CE9940F425E775F6006DB8E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE9940F125E775F3006DB8E9 /* ImagesListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +181,6 @@
 			files = (
 				CE9940D825E7725C006DB8E9 /* LaunchScreen.storyboard in Resources */,
 				CE9940D525E7725C006DB8E9 /* Assets.xcassets in Resources */,
-				CE9940D325E7725A006DB8E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9940D025E7725A006DB8E9 /* ViewController.swift in Sources */,
+				CE9940F225E775F3006DB8E9 /* ImagesListView.swift in Sources */,
+				CE99410025E77616006DB8E9 /* ImagesListRouter.swift in Sources */,
+				CE9940EE25E7753C006DB8E9 /* ImagesListVCAssembly.swift in Sources */,
+				CE9940FD25E77610006DB8E9 /* ImagesListInteractor.swift in Sources */,
+				CE9940D025E7725A006DB8E9 /* ImagesListViewController.swift in Sources */,
+				CE9940E425E7742F006DB8E9 /* NavigationControllerAssembly.swift in Sources */,
 				CE9940CC25E7725A006DB8E9 /* AppDelegate.swift in Sources */,
+				CE9940FA25E77604006DB8E9 /* ImagesListPresenter.swift in Sources */,
 				CE9940CE25E7725A006DB8E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +206,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE9940D125E7725A006DB8E9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE9940D225E7725A006DB8E9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE9940D625E7725C006DB8E9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -8,7 +8,7 @@
 import UIKit
 
 protocol IImagesListView: AnyObject {
-    var cellWasSelectedAt: ((IndexPath) -> Void)? { get set }
+    var cellSelectedAt: ((IndexPath) -> Void)? { get set }
     var refreshControlDidChangedValue: (() -> Void)? { get set }
 
     func setupView(stringURLs: [String])
@@ -27,7 +27,6 @@ final class ImagesListView: UIView {
         myCollectionView.register(
             ImagesListCollectionViewCell.self,
             forCellWithReuseIdentifier: ImagesListCollectionViewCell.reuseIdentifier)
-        myCollectionView.accessibilityIdentifier = "placesCollectionView"
         myCollectionView.refreshControl = self.refreshControl
         return myCollectionView
     }()
@@ -52,7 +51,7 @@ final class ImagesListView: UIView {
 
     private var imagesCollectionViewDataSource = ImagesCollectionViewDataSource()
     private var imagesCollectionViewDelegate: ImagesCollectionViewDelegate?
-    var cellWasSelectedAt: ((IndexPath) -> Void)?
+    var cellSelectedAt: ((IndexPath) -> Void)?
     var refreshControlDidChangedValue: (() -> Void)?
 
     // MARK: - Init
@@ -70,10 +69,10 @@ final class ImagesListView: UIView {
     // MARK: - Обработка действия от refreshControl
 
     @objc private func refreshAction() {
-        // Пол секунды задержки чисто для того, чтобы увидеть обновление
+        // Пол секунды задержки для того, чтобы увидеть обновление
         // Чисто для красоты =)
         // Можно спокойно убрать
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + AppConstants.DelayTime.refreshControlDelay) {
             self.refreshControlDidChangedValue?()
         }
     }
@@ -107,16 +106,29 @@ extension ImagesListView: IImagesListView {
     }
 }
 
-// MARK: - UISetup
+// MARK: - UI preparing
 
 private extension ImagesListView {
     func prepareView() {
         self.setupActivityIndicatorView()
     }
 
-    func setupImagesCollectionView() {
-        let layout = self.setupCollectionViewLayout()
+    func setupActivityIndicatorView() {
+        self.addSubview(self.activityIndicatorView)
+        self.activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
 
+        NSLayoutConstraint.activate([
+            self.activityIndicatorView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            self.activityIndicatorView.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+        ])
+    }
+}
+
+// MARK: - Настройка imagesCollectionView
+
+private extension ImagesListView {
+    private func setupImagesCollectionView() {
+        let layout = self.setupCollectionViewLayout()
         self.imagesCollectionView.setCollectionViewLayout(layout, animated: true)
         self.imagesCollectionViewDelegate = ImagesCollectionViewDelegate(withDelegate: self)
         self.imagesCollectionView.delegate = self.imagesCollectionViewDelegate
@@ -139,20 +151,12 @@ private extension ImagesListView {
         ])
     }
 
-    func setupActivityIndicatorView() {
-        self.addSubview(self.activityIndicatorView)
-        self.activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
-
-        NSLayoutConstraint.activate([
-            self.activityIndicatorView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            self.activityIndicatorView.centerXAnchor.constraint(equalTo: self.centerXAnchor)
-        ])
-    }
-
-    func setupCollectionViewLayout() -> UICollectionViewFlowLayout{
+    func setupCollectionViewLayout() -> UICollectionViewFlowLayout {
+        // Ширина ячейки равна ширине экрана с отступами по 10 px с каждого края
         let itemWidth = self.frame.width - 2 * AppConstants.Constraints.insets
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
+        // Высота ячейки равна ширине
         layout.itemSize = CGSize(width: itemWidth,
                                  height: itemWidth)
         layout.sectionInset = UIEdgeInsets(top: AppConstants.Constraints.insets,
@@ -164,8 +168,10 @@ private extension ImagesListView {
     }
 }
 
+// MARK: - IImagesCollectionViewDelegate
+
 extension ImagesListView: IImagesCollectionViewDelegate {
     func selectedCell(indexPath: IndexPath) {
-        self.cellWasSelectedAt?(indexPath)
+        self.cellSelectedAt?(indexPath)
     }
 }

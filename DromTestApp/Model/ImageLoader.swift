@@ -18,12 +18,12 @@ final class ImageLoader {
     // MARK: - Public method
 
     func imageFor(stringURL: String,
-                  completionHandler: @escaping (String ,UIImage?) -> Void) {
+                  completionHandler: @escaping (String, UIImage?) -> Void) {
         self.globalQueue.async {
             guard let url = URL(string: stringURL) else {
                 return
             }
-            if let imageInCache = self.cache.object(forKey: url.absoluteString as NSString)  {
+            if let imageInCache = self.cache.object(forKey: stringURL as NSString)  {
                 self.mainQueue.async {
                     completionHandler(stringURL, imageInCache)
                 }
@@ -43,7 +43,7 @@ final class ImageLoader {
                     }
                     return
                 }
-                self.cache.setObject(image, forKey: url.absoluteString as NSString)
+                self.cache.setObject(image, forKey: stringURL as NSString)
                 self.mainQueue.async {
                     completionHandler(stringURL, image)
                 }

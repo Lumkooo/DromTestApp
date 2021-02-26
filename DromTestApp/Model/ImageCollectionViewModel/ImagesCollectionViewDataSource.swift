@@ -13,7 +13,7 @@ final class ImagesCollectionViewDataSource: NSObject {
 
     private var stringURLs: [String] = []
 
-    // MARK: - stringURLs setter
+    // MARK: - Методы для работы с stringURLs
 
     func setData(stringURLs: [String]) {
         self.stringURLs = stringURLs
@@ -41,7 +41,7 @@ extension ImagesCollectionViewDataSource: UICollectionViewDataSource{
                 withReuseIdentifier: ImagesListCollectionViewCell.reuseIdentifier,
                 for: indexPath) as? ImagesListCollectionViewCell
         else {
-            fatalError("Something went wrong")
+            fatalError("Can't dequeue reusable cell")
         }
         let stringURL = self.stringURLs[indexPath.row]
         cell.setupCell(stringURL: stringURL)

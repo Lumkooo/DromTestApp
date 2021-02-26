@@ -29,10 +29,10 @@ final class ImagesCollectionViewDelegate: NSObject {
 extension ImagesCollectionViewDelegate: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
-        let translationValue: CGFloat = 3000
+        let translationXValue: CGFloat = 3000
         let cell = collectionView.cellForItem(at: indexPath)
         UIView.animate(withDuration: AppConstants.AnimationTime.collectionViewCellSlideAnimation) {
-            cell?.transform = CGAffineTransform(translationX: translationValue,
+            cell?.transform = CGAffineTransform(translationX: translationXValue,
                                                 y: 0)
         } completion: { _ in
             self.delegate?.selectedCell(indexPath: indexPath)

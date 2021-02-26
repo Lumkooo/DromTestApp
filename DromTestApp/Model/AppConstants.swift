@@ -30,4 +30,10 @@ enum AppConstants {
     enum AnimationTime {
         static let collectionViewCellSlideAnimation: Double = 0.3
     }
+
+    // MARK: - DelayTime
+
+    enum DelayTime {
+        static let refreshControlDelay: Double = 0.5
+    }
 }

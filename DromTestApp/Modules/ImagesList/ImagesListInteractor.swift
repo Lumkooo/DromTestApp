@@ -9,8 +9,8 @@ import Foundation
 
 protocol IImagesListInteractor {
     func loadInitData()
-    func removeAt(indexPath: IndexPath)
     func reloadData()
+    func removeAt(indexPath: IndexPath)
 }
 
 protocol IImagesListInteractorOuter: AnyObject {

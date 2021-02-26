@@ -27,15 +27,15 @@ final class ImagesListCollectionViewCell: UICollectionViewCell {
 
     // MARK: - Properties
 
+    static var reuseIdentifier: String {
+        return String(describing: ImagesListCollectionViewCell.self)
+    }
+    private let imageLoader = ImageLoader()
     private var stringImageURL: String? {
         didSet {
             self.imageView.image = nil
             self.updateUI()
         }
-    }
-    private let imageLoader = ImageLoader()
-    static var reuseIdentifier: String {
-        return String(describing: ImagesListCollectionViewCell.self)
     }
 
     // MARK: - Init

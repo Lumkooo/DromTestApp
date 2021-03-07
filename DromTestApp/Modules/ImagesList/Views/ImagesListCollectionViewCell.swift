@@ -14,6 +14,7 @@ final class ImagesListCollectionViewCell: UICollectionViewCell {
     private lazy var imageView: UIImageView = {
         let myImageView = UIImageView()
         myImageView.contentMode = .redraw
+        myImageView.accessibilityIdentifier = "collectionViewCellImageView"
         return myImageView
     }()
 
@@ -21,6 +22,7 @@ final class ImagesListCollectionViewCell: UICollectionViewCell {
         let myActivityIndicatorView = UIActivityIndicatorView(style: .large)
         myActivityIndicatorView.startAnimating()
         myActivityIndicatorView.hidesWhenStopped = true
+        myActivityIndicatorView.accessibilityIdentifier = "collectionViewCellActivityIndicatorView"
         myActivityIndicatorView.color = .black
         return myActivityIndicatorView
     }()
@@ -33,7 +35,6 @@ final class ImagesListCollectionViewCell: UICollectionViewCell {
     private let imageLoader = ImageLoader()
     private var stringImageURL: String? {
         didSet {
-            self.imageView.image = nil
             self.updateUI()
         }
     }
@@ -56,6 +57,7 @@ final class ImagesListCollectionViewCell: UICollectionViewCell {
     }
 
     private func updateUI() {
+        self.imageView.image = nil
         self.activityIndicatorView.startAnimating()
         if let stringURL = self.stringImageURL {
             self.imageLoader.imageFor(stringURL: stringURL) { (stringURL, image) in

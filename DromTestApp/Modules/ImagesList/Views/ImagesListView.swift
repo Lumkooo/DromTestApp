@@ -27,6 +27,7 @@ final class ImagesListView: UIView {
         myCollectionView.register(
             ImagesListCollectionViewCell.self,
             forCellWithReuseIdentifier: ImagesListCollectionViewCell.reuseIdentifier)
+        myCollectionView.accessibilityIdentifier = "imagesCollectionView"
         myCollectionView.refreshControl = self.refreshControl
         return myCollectionView
     }()
@@ -36,6 +37,7 @@ final class ImagesListView: UIView {
         myActivityIndicatorView.startAnimating()
         myActivityIndicatorView.hidesWhenStopped = true
         myActivityIndicatorView.color = .black
+        myActivityIndicatorView.accessibilityIdentifier = "mainScreenActivityIndicatorView"
         return myActivityIndicatorView
     }()
 
@@ -44,6 +46,7 @@ final class ImagesListView: UIView {
         myRefreshControl.addTarget(self,
                                    action: #selector(refreshAction),
                                    for: .valueChanged)
+        myRefreshControl.accessibilityIdentifier = "mainScreenRefreshControl"
         return myRefreshControl
     }()
 

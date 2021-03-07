@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1001E625F3380D001BFD2E /* DromTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1001E525F3380D001BFD2E /* DromTestAppUITests.swift */; };
+		CE48D3C725F47DEF00D79F5A /* ImagesListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48D3C625F47DEF00D79F5A /* ImagesListInteractorTest.swift */; };
+		CE48D3D225F47E4B00D79F5A /* ImagesListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48D3D125F47E4B00D79F5A /* ImagesListPresenterTest.swift */; };
+		CE48D3E525F47FD500D79F5A /* ImagesListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48D3E425F47FD500D79F5A /* ImagesListInteractorTests.swift */; };
+		CE48D3F125F48ADC00D79F5A /* ImagesListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48D3F025F48ADC00D79F5A /* ImagesListViewControllerTests.swift */; };
+		CE48D40425F48F6000D79F5A /* ImagesListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48D40325F48F6000D79F5A /* ImagesListPresenterTests.swift */; };
+		CE48D41525F4902000D79F5A /* ImagesListRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48D41425F4902000D79F5A /* ImagesListRouterTest.swift */; };
+		CE48D41A25F4912200D79F5A /* ImagesListViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48D41925F4912200D79F5A /* ImagesListViewTest.swift */; };
 		CE9940CC25E7725A006DB8E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9940CB25E7725A006DB8E9 /* AppDelegate.swift */; };
 		CE9940CE25E7725A006DB8E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9940CD25E7725A006DB8E9 /* SceneDelegate.swift */; };
 		CE9940D025E7725A006DB8E9 /* ImagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9940CF25E7725A006DB8E9 /* ImagesListViewController.swift */; };
@@ -26,7 +34,36 @@
 		CE99411A25E78026006DB8E9 /* ImagesCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99411925E78026006DB8E9 /* ImagesCollectionViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CE1001E825F3380D001BFD2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9940C025E7725A006DB8E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE9940C725E7725A006DB8E9;
+			remoteInfo = DromTestApp;
+		};
+		CE1001F825F33818001BFD2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9940C025E7725A006DB8E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE9940C725E7725A006DB8E9;
+			remoteInfo = DromTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CE1001E325F3380D001BFD2E /* DromTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DromTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1001E525F3380D001BFD2E /* DromTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DromTestAppUITests.swift; sourceTree = "<group>"; };
+		CE1001E725F3380D001BFD2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1001F325F33818001BFD2E /* DromTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DromTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1001F725F33818001BFD2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE48D3C625F47DEF00D79F5A /* ImagesListInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListInteractorTest.swift; sourceTree = "<group>"; };
+		CE48D3D125F47E4B00D79F5A /* ImagesListPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListPresenterTest.swift; sourceTree = "<group>"; };
+		CE48D3E425F47FD500D79F5A /* ImagesListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListInteractorTests.swift; sourceTree = "<group>"; };
+		CE48D3F025F48ADC00D79F5A /* ImagesListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewControllerTests.swift; sourceTree = "<group>"; };
+		CE48D40325F48F6000D79F5A /* ImagesListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListPresenterTests.swift; sourceTree = "<group>"; };
+		CE48D41425F4902000D79F5A /* ImagesListRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListRouterTest.swift; sourceTree = "<group>"; };
+		CE48D41925F4912200D79F5A /* ImagesListViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewTest.swift; sourceTree = "<group>"; };
 		CE9940C825E7725A006DB8E9 /* DromTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DromTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9940CB25E7725A006DB8E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9940CD25E7725A006DB8E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +86,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE1001E025F3380D001BFD2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE1001F025F33818001BFD2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE9940C525E7725A006DB8E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,10 +110,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1001E425F3380D001BFD2E /* DromTestAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE1001E525F3380D001BFD2E /* DromTestAppUITests.swift */,
+				CE1001E725F3380D001BFD2E /* Info.plist */,
+			);
+			path = DromTestAppUITests;
+			sourceTree = "<group>";
+		};
+		CE1001F425F33818001BFD2E /* DromTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE1001F725F33818001BFD2E /* Info.plist */,
+				CE48D3E925F487EE00D79F5A /* ImagesListTests */,
+				CE48D3C425F47D9F00D79F5A /* TestDoubles */,
+			);
+			path = DromTestAppTests;
+			sourceTree = "<group>";
+		};
+		CE48D3C425F47D9F00D79F5A /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				CE48D3C525F47DA400D79F5A /* Spies */,
+			);
+			path = TestDoubles;
+			sourceTree = "<group>";
+		};
+		CE48D3C525F47DA400D79F5A /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				CE48D41925F4912200D79F5A /* ImagesListViewTest.swift */,
+				CE48D3D125F47E4B00D79F5A /* ImagesListPresenterTest.swift */,
+				CE48D3C625F47DEF00D79F5A /* ImagesListInteractorTest.swift */,
+				CE48D41425F4902000D79F5A /* ImagesListRouterTest.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
+		CE48D3E925F487EE00D79F5A /* ImagesListTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE48D3F025F48ADC00D79F5A /* ImagesListViewControllerTests.swift */,
+				CE48D40325F48F6000D79F5A /* ImagesListPresenterTests.swift */,
+				CE48D3E425F47FD500D79F5A /* ImagesListInteractorTests.swift */,
+			);
+			path = ImagesListTests;
+			sourceTree = "<group>";
+		};
 		CE9940BF25E7725A006DB8E9 = {
 			isa = PBXGroup;
 			children = (
 				CE9940CA25E7725A006DB8E9 /* DromTestApp */,
+				CE1001E425F3380D001BFD2E /* DromTestAppUITests */,
+				CE1001F425F33818001BFD2E /* DromTestAppTests */,
 				CE9940C925E7725A006DB8E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				CE9940C825E7725A006DB8E9 /* DromTestApp.app */,
+				CE1001E325F3380D001BFD2E /* DromTestAppUITests.xctest */,
+				CE1001F325F33818001BFD2E /* DromTestAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +262,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CE1001E225F3380D001BFD2E /* DromTestAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE1001EA25F3380D001BFD2E /* Build configuration list for PBXNativeTarget "DromTestAppUITests" */;
+			buildPhases = (
+				CE1001DF25F3380D001BFD2E /* Sources */,
+				CE1001E025F3380D001BFD2E /* Frameworks */,
+				CE1001E125F3380D001BFD2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE1001E925F3380D001BFD2E /* PBXTargetDependency */,
+			);
+			name = DromTestAppUITests;
+			productName = DromTestAppUITests;
+			productReference = CE1001E325F3380D001BFD2E /* DromTestAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CE1001F225F33818001BFD2E /* DromTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE1001FA25F33818001BFD2E /* Build configuration list for PBXNativeTarget "DromTestAppTests" */;
+			buildPhases = (
+				CE1001EF25F33818001BFD2E /* Sources */,
+				CE1001F025F33818001BFD2E /* Frameworks */,
+				CE1001F125F33818001BFD2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE1001F925F33818001BFD2E /* PBXTargetDependency */,
+			);
+			name = DromTestAppTests;
+			productName = DromTestAppTests;
+			productReference = CE1001F325F33818001BFD2E /* DromTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CE9940C725E7725A006DB8E9 /* DromTestApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE9940DC25E7725C006DB8E9 /* Build configuration list for PBXNativeTarget "DromTestApp" */;
@@ -185,6 +324,14 @@
 				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
+					CE1001E225F3380D001BFD2E = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = CE9940C725E7725A006DB8E9;
+					};
+					CE1001F225F33818001BFD2E = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = CE9940C725E7725A006DB8E9;
+					};
 					CE9940C725E7725A006DB8E9 = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -204,11 +351,27 @@
 			projectRoot = "";
 			targets = (
 				CE9940C725E7725A006DB8E9 /* DromTestApp */,
+				CE1001E225F3380D001BFD2E /* DromTestAppUITests */,
+				CE1001F225F33818001BFD2E /* DromTestAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE1001E125F3380D001BFD2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE1001F125F33818001BFD2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE9940C625E7725A006DB8E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,6 +384,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE1001DF25F3380D001BFD2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1001E625F3380D001BFD2E /* DromTestAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE1001EF25F33818001BFD2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE48D41A25F4912200D79F5A /* ImagesListViewTest.swift in Sources */,
+				CE48D41525F4902000D79F5A /* ImagesListRouterTest.swift in Sources */,
+				CE48D3D225F47E4B00D79F5A /* ImagesListPresenterTest.swift in Sources */,
+				CE48D40425F48F6000D79F5A /* ImagesListPresenterTests.swift in Sources */,
+				CE48D3E525F47FD500D79F5A /* ImagesListInteractorTests.swift in Sources */,
+				CE48D3F125F48ADC00D79F5A /* ImagesListViewControllerTests.swift in Sources */,
+				CE48D3C725F47DEF00D79F5A /* ImagesListInteractorTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE9940C425E7725A006DB8E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,6 +430,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CE1001E925F3380D001BFD2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE9940C725E7725A006DB8E9 /* DromTestApp */;
+			targetProxy = CE1001E825F3380D001BFD2E /* PBXContainerItemProxy */;
+		};
+		CE1001F925F33818001BFD2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE9940C725E7725A006DB8E9 /* DromTestApp */;
+			targetProxy = CE1001F825F33818001BFD2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		CE9940D625E7725C006DB8E9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -257,6 +455,84 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CE1001EB25F3380D001BFD2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB9UTG3H5X;
+				INFOPLIST_FILE = DromTestAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lumko.DromTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DromTestApp;
+			};
+			name = Debug;
+		};
+		CE1001EC25F3380D001BFD2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB9UTG3H5X;
+				INFOPLIST_FILE = DromTestAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lumko.DromTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DromTestApp;
+			};
+			name = Release;
+		};
+		CE1001FB25F33818001BFD2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB9UTG3H5X;
+				INFOPLIST_FILE = DromTestAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lumko.DromTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DromTestApp.app/DromTestApp";
+			};
+			name = Debug;
+		};
+		CE1001FC25F33818001BFD2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB9UTG3H5X;
+				INFOPLIST_FILE = DromTestAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lumko.DromTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DromTestApp.app/DromTestApp";
+			};
+			name = Release;
+		};
 		CE9940DA25E7725C006DB8E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -414,6 +690,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE1001EA25F3380D001BFD2E /* Build configuration list for PBXNativeTarget "DromTestAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE1001EB25F3380D001BFD2E /* Debug */,
+				CE1001EC25F3380D001BFD2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE1001FA25F33818001BFD2E /* Build configuration list for PBXNativeTarget "DromTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE1001FB25F33818001BFD2E /* Debug */,
+				CE1001FC25F33818001BFD2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CE9940C325E7725A006DB8E9 /* Build configuration list for PBXProject "DromTestApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

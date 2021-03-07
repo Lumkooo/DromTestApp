@@ -17,7 +17,7 @@ final class ImagesListPresenter {
 
     private let interactor: IImagesListInteractor
     private let router: IImagesListRouter
-    private weak var ui: IImagesListView?
+    private(set) weak var ui: IImagesListView?
 
     // MARK: - Init
 

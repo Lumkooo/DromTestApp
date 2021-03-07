@@ -24,8 +24,14 @@ final class ImagesListInteractor {
     // MARK: - Properties
 
     weak var presenter: IImagesListInteractorOuter?
-    private var stringURLs: [String] = []
+    private(set) var stringURLs: [String] = []
     private let imagesURLManager = ImagesURLManager()
+
+    // MARK: Public method
+
+    func stringURLSetter(_ stringURLs: [String]) {
+        self.stringURLs = stringURLs
+    }
 }
 
 // MARK: - IImagesListInteractor
@@ -33,7 +39,7 @@ final class ImagesListInteractor {
 extension ImagesListInteractor: IImagesListInteractor {
     func loadInitData() {
         self.imagesURLManager.getImagesStringURL(completion: { (stringURLs) in
-            self.stringURLs = stringURLs
+            self.stringURLSetter(stringURLs)
             self.presenter?.prepareView(stringURLs: stringURLs)
         })
     }
@@ -47,7 +53,7 @@ extension ImagesListInteractor: IImagesListInteractor {
 
     func reloadData() {
         self.imagesURLManager.getImagesStringURL(completion: { (stringURLs) in
-            self.stringURLs = stringURLs
+            self.stringURLSetter(stringURLs)
             self.presenter?.reloadView(stringURLs: stringURLs)
         })
     }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CE1001E625F3380D001BFD2E /* DromTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1001E525F3380D001BFD2E /* DromTestAppUITests.swift */; };
+		CE1259FC25F5CF0F0066DC05 /* ImagesURLManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1259FB25F5CF0F0066DC05 /* ImagesURLManagerTest.swift */; };
+		CE125A0425F5D1B50066DC05 /* ImagesCollectionViewDataSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE125A0325F5D1B50066DC05 /* ImagesCollectionViewDataSourceTest.swift */; };
 		CE48D3C725F47DEF00D79F5A /* ImagesListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48D3C625F47DEF00D79F5A /* ImagesListInteractorTest.swift */; };
 		CE48D3D225F47E4B00D79F5A /* ImagesListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48D3D125F47E4B00D79F5A /* ImagesListPresenterTest.swift */; };
 		CE48D3E525F47FD500D79F5A /* ImagesListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48D3E425F47FD500D79F5A /* ImagesListInteractorTests.swift */; };
@@ -57,6 +59,8 @@
 		CE1001E725F3380D001BFD2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE1001F325F33818001BFD2E /* DromTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DromTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1001F725F33818001BFD2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1259FB25F5CF0F0066DC05 /* ImagesURLManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesURLManagerTest.swift; sourceTree = "<group>"; };
+		CE125A0325F5D1B50066DC05 /* ImagesCollectionViewDataSourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewDataSourceTest.swift; sourceTree = "<group>"; };
 		CE48D3C625F47DEF00D79F5A /* ImagesListInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListInteractorTest.swift; sourceTree = "<group>"; };
 		CE48D3D125F47E4B00D79F5A /* ImagesListPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListPresenterTest.swift; sourceTree = "<group>"; };
 		CE48D3E425F47FD500D79F5A /* ImagesListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListInteractorTests.swift; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 				CE48D3F025F48ADC00D79F5A /* ImagesListViewControllerTests.swift */,
 				CE48D40325F48F6000D79F5A /* ImagesListPresenterTests.swift */,
 				CE48D3E425F47FD500D79F5A /* ImagesListInteractorTests.swift */,
+				CE1259FB25F5CF0F0066DC05 /* ImagesURLManagerTest.swift */,
+				CE125A0325F5D1B50066DC05 /* ImagesCollectionViewDataSourceTest.swift */,
 			);
 			path = ImagesListTests;
 			sourceTree = "<group>";
@@ -401,6 +407,8 @@
 				CE48D3D225F47E4B00D79F5A /* ImagesListPresenterTest.swift in Sources */,
 				CE48D40425F48F6000D79F5A /* ImagesListPresenterTests.swift in Sources */,
 				CE48D3E525F47FD500D79F5A /* ImagesListInteractorTests.swift in Sources */,
+				CE125A0425F5D1B50066DC05 /* ImagesCollectionViewDataSourceTest.swift in Sources */,
+				CE1259FC25F5CF0F0066DC05 /* ImagesURLManagerTest.swift in Sources */,
 				CE48D3F125F48ADC00D79F5A /* ImagesListViewControllerTests.swift in Sources */,
 				CE48D3C725F47DEF00D79F5A /* ImagesListInteractorTest.swift in Sources */,
 			);

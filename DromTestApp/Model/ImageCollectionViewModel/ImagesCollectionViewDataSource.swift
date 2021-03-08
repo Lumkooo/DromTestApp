@@ -11,7 +11,7 @@ final class ImagesCollectionViewDataSource: NSObject {
 
     // MARK: Properties
 
-    private var stringURLs: [String] = []
+    private(set) var stringURLs: [String] = []
 
     // MARK: - Методы для работы с stringURLs
 
